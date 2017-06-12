@@ -1,5 +1,5 @@
-FROM ubuntu
+FROM alpine
 MAINTAINER benjamin.r.whitehead@gmail.com
 
-CMD /bin/bash -c "while true;do env | sort && sleep ${SLEEP_SECONDS:-30};done"
+CMD /bin/sh -c "while true;do env | sort && sleep ${SLEEP_SECONDS:-30};done"
 
